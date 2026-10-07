@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <button onclick="document.getElementById('result').innerHTML = Date()">
+      Click To show
+    </button>
+    <h5 id="result"></h5>
+
+    <button
+      onclick="document.getElementById('myImage').src = 'images/pic_bulbon.gif'"
+    >
+      Turn On
+    </button>
+    <img src="images/pic_bulboff.gif" id="myImage" />
+    <button
+      onclick="
+        document.getElementById('myImage').src = 'images/pic_bulboff.gif'
+      "
+    >
+      Turn Off
+    </button>
+    <script src="js/main.js"></script>
+  </body>
+</html>
